@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Made By Mazen MOhamed -->
+    <link rel="stylesheet" href="bookbuzz.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=  , initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/work_my_frinds/mahmoud/project.css" />
+  </head>
+  <body>
+    <div class="slide">✌𝓸𝓹𝓮𝓷 𝔂𝓸𝓾𝓻 𝓶𝓲𝓷𝓭 𝓫𝓸𝓸𝓴 𝓼𝓽𝓸𝓻𝓮✌</div>
+    <div class="fixed">
+      <div class="container-search">
+        <div class="left">
+          <div class="search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input
+              class="search-input"
+              type="search"
+              placeholder="Search..."
+              name="search"
+              onkeyup="search()" />
+            <div class="products-list">
+              <div class="product">
+                <img src="/media-for-project/all light.webp" alt="" />
+                <div class="product-details">
+                  <h2>
+                    <a href="/all_books/b1.html">the Light We Cannot See </a>
+                  </h2>
+                  <h3>$4.98</h3>
+                </div>
+              </div>
+              <div class="product">
+                <img src="/media-for-project/twilight.webp" alt="" />
+                <div class="product-details">
+                  <h2>
+                    <a href="/all_books/b1.html">Twilight (Twilight Saga) </a>
+                  </h2>
+                  <h3>$4.51</h3>
+                </div>
+              </div>
+              <div class="product">
+                <img src="/media-for-project/the day the nazis.webp" alt="" />
+                <div class="product-details">
+                  <h2>
+                    <a href="/all_books/b1.html">The Day the Nazis Came </a>
+                  </h2>
+                  <h3>$3.71</h3>
+                </div>
+              </div>
+              <div class="product">
+                <img src="/media-for-project/seorch.avif" alt="" />
+                <div class="product-details">
+                  <h2>
+                    <a href="/all_books/b1.html">seorch </a>
+                  </h2>
+                  <h3>$6.99</h3>
+                </div>
+              </div>
+              <div class="product">
+                <img
+                  src="/media-for-project/along walk to a water.jpg"
+                  alt="" />
+                <div class="product-details">
+                  <h2>
+                    <a href="/all_books/b1.html">A Long Walk to Water </a>
+                  </h2>
+                  <h3>$5.80</h3>
+                </div>
+              </div>
+              <div class="product">
+                <img src="/media-for-project/Sixth Red.jpg" alt="" />
+                <div class="product-details">
+                  <h2>
+                    <a href="/all_books/b1.html">Sixth Red </a>
+                  </h2>
+                  <h3>5.43$</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sign-in">
+        <a href="form-signin.html"
+          ><span class="material-symbols-outlined">login</span></a
+        >
+      </div>
+      <div class="cart">
+        <a href="/work_my_frinds/mahmoud/bookbuzz.html"
+          ><span class="material-symbols-outlined"> shopping_cart </span></a
+        >
+      </div>
+
+      <div class="center">
+        <div class="videos">
+          <a href="/work_my_frinds/mahmoud/videos.html">videos</a>
+        </div>
+        <div class="dropdown">
+          <span>Book Section</span>
+          <div class="dropdown-content">
+            <a href="book_section_generlBooks.html">.general Books</a>
+            <a href="/work_my_frinds/book_store_Karim/index.html">.History</a>
+            <a href="/work_my_frinds/ramy/section IT 2/WOW.html"
+              >.Psychology and self-development</a
+            >
+          </div>
+        </div>
+        <div class="home">
+          <a href="page1.html">Home</a>
+        </div>
+      </div>
+
+      <button><a class="darkMode" href="darkMode.html">Dark Mode</a></button>
+    </div>
+
+    <!-- سكربت لتواقيت دول العالم - ويمكنك إضافة اي عدد من الدول -->
+
+    <form name="where">
+      <table border="0" width="200" cellspacing="0" cellpadding="3">
+        <tr>
+          <td width="100%">
+            <select name="city" size="1" onchange="updateclock(this);">
+              <option selected>التوقيت المحلي</option>
+              <option value="3">السعودية</option>
+              <option value="4">الإمارات</option>
+              <option value="3">الكويت</option>
+              <option value="3">لبنان</option>
+              <option value="4">عمان</option>
+              <option value="3">قطر</option>
+              <option value="3">مصر</option>
+              <option value="0">المغرب</option>
+              <option value="1">تونس</option>
+              <option value="3">السودان</option>
+              <option value="0">لندن</option>
+              <option value="1">روما</option>
+              <option value="7">بانكوك</option>
+              <option value="8">هونكغ كونغ</option>
+              <option value="9">طوكيو</option>
+              <option value="10">سيدني</option>
+              <option value="12">فوجي</option>
+              <option value="-10">هاواي</option>
+              <option value="-8">سان فرانسيسكو</option>
+              <option value="-5">نيويورك</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <script language="JavaScript">
+              /*
+       Visit our site at http://www.elahmad.com/ for more code
+       */
+
+              if (document.all || document.getElementById)
+                document.write(
+                  '<span id="worldclock" style="font:bold 16px Arial;"></span><br>'
+                );
+
+              zone = 0;
+              isitlocal = true;
+              ampm = "";
+
+              function updateclock(z) {
+                zone = z.options[z.selectedIndex].value;
+                isitlocal = z.options[0].selected ? true : false;
+              }
+
+              function WorldClock() {
+                now = new Date();
+                ofst = now.getTimezoneOffset() / 60;
+                secs = now.getSeconds();
+                sec = -1.57 + (Math.PI * secs) / 30;
+                mins = now.getMinutes();
+                min = -1.57 + (Math.PI * mins) / 30;
+                hr = isitlocal
+                  ? now.getHours()
+                  : now.getHours() + parseInt(ofst) + parseInt(zone);
+                hrs =
+                  -1.575 +
+                  (Math.PI * hr) / 6 +
+                  (Math.PI * parseInt(now.getMinutes())) / 360;
+                if (hr < 0) hr += 24;
+                if (hr > 23) hr -= 24;
+                ampm = hr > 11 ? "PM" : "AM";
+                statusampm = ampm.toLowerCase();
+
+                hr2 = hr;
+                if (hr2 == 0) hr2 = 12;
+                hr2 < 13 ? hr2 : (hr2 %= 12);
+                if (hr2 < 10) hr2 = "0" + hr2;
+
+                var finaltime =
+                  hr2 +
+                  ":" +
+                  (mins < 10 ? "0" + mins : mins) +
+                  ":" +
+                  (secs < 10 ? "0" + secs : secs) +
+                  " " +
+                  statusampm;
+
+                if (document.all) worldclock.innerHTML = finaltime;
+                else if (document.getElementById)
+                  document.getElementById("worldclock").innerHTML = finaltime;
+                else if (document.layers) {
+                  document.worldclockns.document.worldclockns2.document.write(
+                    finaltime
+                  );
+                  document.worldclockns.document.worldclockns2.document.close();
+                }
+
+                setTimeout("WorldClock()", 1000);
+              }
+
+              window.onload = WorldClock;
+              //-->
+            </script>
+
+            <!--Place holder for NS4 only-->
+            <ilayer id="worldclockns" width="100%" height="35"
+              ><layer
+                id="worldclockns2"
+                width="100%"
+                height="35"
+                left="0"
+                top="0"
+                style="font: bold 16px Arial"></layer
+            ></ilayer>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <!--عنوان صفحه الفيديوهات -->
+    <div><h1>videos</h1></div>
+
+    <!-- ما داخل الصندوق  -->
+    <div>
+      <h2>
+        book buz The beginning and journey of launching the Egyptian Book Fair
+        2021 via the electronic system
+        <br />
+        <iframe
+          width="700"
+          height="300"
+          src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 02.56.04_f93d3563.mp4"></iframe>
+        <br />
+        <hr />
+
+        Speech by Dr. Fatima Al-Boudi, founder of Dar Al-Ain for Publishing and
+        Distribution
+        <br />
+        <iframe
+          width="700"
+          height="300"
+          src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 03.28.52_3224a583.mp4"></iframe>
+        <br />
+        <hr />
+
+        Speech by Professor Basant Abdel Hamid, author of the novel Shaden
+        <br />
+        <iframe
+          width="700"
+          height="300"
+          src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 03.30.00_25b0ded0.mp4"
+          >…</iframe
+        >
+        <br />
+        <hr />
+
+        A speech by Professor Ammonius Saad, author of the book The Richest Man
+        in Imbaba and the Isis Papyrus
+        <br />
+        <iframe
+          width="700"
+          height="300"
+          src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 03.29.39_1e3620ed.mp4"
+          >…</iframe
+        >
+        <br />
+        <hr />
+
+        Speech by the writer and novelist Yahya Safwat, author of the novel
+        Genena Al Mahrouqi
+        <br />
+        <iframe
+          width="700"
+          height="300"
+          src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 03.28.52_3224a583.mp4"
+          >…</iframe
+        >
+        <br />
+        <hr />
+
+        My favorite author’s most accessible book to date
+        <br />
+        <video width="700" height="300" controls poster="mahmoud 13.jpg">
+          <source
+            src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 02.30.49_880c1cbc.mp4"
+            type="video/mp4" />
+        </video>
+        <br />
+        <hr />
+
+        The best 5 books you can read
+        <br />
+        <video width="700" height="300" controls>
+          <source
+            src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 02.30.50_d1c4189e.mp4"
+            type="video/mp4" />
+        </video>
+        <br />
+        <hr />
+
+        the only book iave rated 5stars this year
+        <br />
+        <video width="700" height="300" controls>
+          <source
+            src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 02.30.49_5bf02cff.mp4"
+            type="video/mp4" />
+        </video>
+        <br />
+        <hr />
+
+        BOOKS I THOUGHT WOULD BE 5
+        <br />
+        <video width="700" height="300" controls>
+          <source
+            src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 02.30.49_bc779ae5.mp4"
+            type="video/mp4" />
+        </video>
+        <br />
+        <hr />
+
+        7books THAT WILL ACTUALLY CHANGE YOUR LIFT
+        <br />
+        <video width="700" height="300" controls video>
+          <source
+            src="/work_my_frinds/mahmoud/WhatsApp Video 2024-05-07 at 02.30.50_eefec0c0.mp4"
+            type="video/mp4" />
+        </video>
+        <br />
+        <hr />
+      </h2>
+
+      <!-- This for my footer Mazen Mohamed -->
+      <div class="footer">
+        <div class="contact-us">
+          <a href="https://www.facebook.com" _target="blank" title="facebook">
+            <img class="insta" src="/media-for-project/facebook.png" alt="" />
+          </a>
+          <a href="https://www.instagram.com" _target="blank" title="instagram">
+            <img class="insta" src="/media-for-project/instagram.png" alt="" />
+          </a>
+          <a href="https://www.twitter.com" _target="blank" title="twitter">
+            <img class="twtr" src="/media-for-project/twitter.png" alt="" />
+          </a>
+        </div>
+        <div class="hr1"><hr /></div>
+        <div class="about-us">
+          <a href="/work_my_frinds/book_store_Karim/about us/index.html">
+            About Us</a
+          >
+          <a href="#a"> Contact Us</a>
+          <a href="#a"> Top Authors</a>
+          <a href="/feedback&evalution.html"> Feed Back</a>
+        </div>
+        <div class="hr2"><hr /></div>
+        <div class="copy-write">
+          <pre class="pre">
+                   ___   ___   ____  _          _     ___   _     ___       _      _   _      ___  
+                  / / \ | |_) | |_  | |\ |     \ \_/ / / \ | | | | |_)     | |\/| | | | |\ | | | \ 
+                  \_\_/ |_|   |_|__ |_| \|      |_|  \_\_/ \_\_/ |_| \     |_|  | |_| |_| \| |_|_/ 
+                </pre
+          >
+          <p>&copy; Copyright OPen Your Mind 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- الفديوهات -->
+  </body>
+</html>

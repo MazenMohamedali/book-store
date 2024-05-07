@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-padding: 20px;
+  --main-color: goldenrod;
+  --color-fixed: #ffffff;
+}
+.videos,
+.dropdown,
+.home {
+  margin-top: 5px;
+  color: black;
+}
+
+nav a,
+.buy a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+nav a:hover,
+.buy a:hover {
+  font-weight: bold !important;
+  color: red !important;
+  padding: 10px !important;
+}
+
+.dropdown-content {
+  background-color: #f1f1f1f1;
+  display: none;
+  width: 120px;
+  position: absolute;
+}
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+  margin: 5px;
+}
+
+aside {
+  display: grid;
+  justify-content: center;
+  grid-column: 8 / 9;
+  width: 200px;
+  height: fit-content;
+}
+
+.dropdown span::after {
+  content: "";
+  border: 6px solid;
+  border-color: black transparent transparent transparent;
+  display: inline-flex;
+  margin-left: 3px;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: min(0px);
+  margin-left: max(-15px);
+}
+
+.page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: 31.6px 30px auto auto auto;
+  grid-template-areas:
+    "slide slide slide slide slide slide slide slide slide slide"
+    "nav nav nav nav nav nav nav nav nav nav"
+    "h2 h2 h2 h2 h2 h2 h2 h2 h2 h2"
+    "aside aside aside section section section section section section section"
+    "footer footer footer footer footer footer footer footer footer footer";
+  grid-gap: 20px;
+  max-width: 85%;
+}
+
+.slide {
+  grid-area: slide;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+  border: 5px solid #000000;
+  border-radius: 5px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: auto;
+  list-style: none;
+  background-color: goldenrod;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+}
+
+.search {
+  grid-column: 1 / 4;
+}
+.videos {
+  grid-column: 5 / 6;
+}
+.button {
+  grid-column: 10 / 11;
+}
+button a {
+  color: white !important;
+}
+
+.log {
+  color: black;
+  border: 2px solid white;
+  border-radius: 11px;
+  position: relative;
+  top: 2px;
+  right: 0px;
+}
+
+input.search-input {
+  display: inline-grid;
+  margin-bottom: 0px;
+  position: relative;
+  left: 0px;
+  top: -5px;
+  border: 1px solid #c4c2c2;
+  border-radius: 8px;
+  padding: 3px;
+}
+
+span.search-icon.material-symbols-outlined {
+  position: relative;
+  top: 3px;
+  left: 171px;
+  border-size: 1px 1px 1px 1px;
+  border-radius: 12px 1px 0px 10px;
+  z-index: 1;
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #eee;
+  /* border: 5px solid #000000; */
+  /* border-radius: 5px; */
+  grid-template-columns: repeat(10, 10%);
+  margin-top: -20px;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    grid-row: 1 / 4; /* Adjust the grid row for smaller screens */
+  }
+}
+.container {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  grid-column: 2 / 10;
+}
+/*
+
+@media only screen and (min-width: 600px) {
+  .container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+  }
+} 
+img {
+  max-width: 300px;
+  display: inline-grid;
+  align-items: center;
+  max-height: 364px;
+  margin-left: 20px;
+  grid-row: 4 / 7;
+}*/
+aside img {
+  /* max-width: 300px; */
+  /* display: inline-grid; */
+  align-items: center;
+  max-height: 200px;
+  margin-top: 100px;
+  margin-left: 20px;
+  grid-row: 4 / 7;
+  height: 200px;
+  max-width: 100%;
+}
+
+.contimage {
+  width: fit-content;
+  height: fit-content;
+}
+
+.quantity-input {
+  min-width: fit-content;
+  /* z-index: 1; */
+  position: relative;
+}
+
+section {
+  grid-column: 1 / 7;
+}
+
+h2 {
+  grid-area: h2;
+  text-align: center;
+  margin: 10px;
+  width: fit-content;
+  grid-column: 4 / 9;
+  box-shadow: 0px 5px 5px 2px goldenrod;
+  height: 32px;
+}
+
+button {
+  height: fit-content;
+  margin-top: 8px;
+  background-color: black;
+  color: white;
+}
+.oldprice::before {
+  content: "oldprice:";
+}
+p.oldprice {
+  text-decoration: line-through;
+  color: goldenrod;
+  display: inline-block;
+}
+p.currentprice {
+  display: inline-block;
+  margin: 10px;
+}
+.currentprice::before {
+  content: "Current Price:";
+  font-weight: bold;
+}
+p.add {
+  border: 1px solid #eee;
+  background-color: #eee;
+  width: 113px;
+  height: 36px;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.footer {
+  background: -webkit-linear-gradient(
+    right,
+    #eee,
+    black,
+    var(--main-color)
+  ); /* For Safari */
+  background: -o-linear-gradient(
+    right,
+    #eee,
+    black,
+    var(--main-color)
+  ); /* For Opera */
+  background: -moz-linear-gradient(
+    right,
+    #eee,
+    black,
+    var(--main-color)
+  ); /* For Firefox */
+  background: linear-gradient(to right, #eee, black, var(--main-color));
+  height: 189px;
+  color: white;
+  font-weight: 500 !important;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, auto);
+  grid-column: 1 / 10;
+}
+.footer a {
+  font-weight: 500;
+}
+
+.contact-us {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  /* margin-top: 7%; */
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-us span {
+  font-weight: bold;
+  color: var(--main-color);
+  display: block;
+}
+
+img.insta,
+img.facebook {
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+img.twtr {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.contact-us a {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-us a img:hover {
+  width: 35px;
+  height: 35px;
+  transition: 0.5s;
+}
+
+.about-us {
+  grid-column: 2 / 5;
+  display: flex;
+  align-items: center;
+  margin-left: -22px;
+  justify-content: space-between;
+  max-width: 800px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.about-us a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.hr1 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 6;
+  width: 100%;
+  height: 0px;
+}
+
+.hr2 {
+  grid-row: 4 / 4;
+  grid-column: 1 / 6;
+  width: 100%;
+  height: 0px;
+}
+
+.copy-write {
+  grid-row: 5 / 5;
+  text-align: center;
+  grid-column: 2 / 3;
+}
+
+.copy-write pre {
+  grid-row: 2 / 3;
+  width: fit-content;
+  text-align: center;
+}
+
+.copy-write p {
+  margin-left: 241px;
+  width: 231px;
+}
+
+.footer a:hover {
+  color: red !important;
+  font-weight: bold;
+}

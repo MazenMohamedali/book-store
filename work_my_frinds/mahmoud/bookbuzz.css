@@ -1,0 +1,542 @@
+body {
+  background-color: rgba(255, 255, 255, 0.648);
+  text-align: left;
+}
+
+div h1 {
+  text-align: center;
+  margin-top: 150px;
+}
+
+div h2 {
+  text-align: center;
+}
+
+/* الصندوق المدور */
+div h2 {
+  /*حجم البرواز ولونه ونوعه  */
+  border: 1px rgb(42, 6, 100) solid;
+  /* عرض الصندوق*/
+  width: 600px;
+  /* طول الصندوق  */
+  height: 30px;
+  /* مكان الكتابه في الصنوق */
+  padding: 40px 40px;
+  /* مكان الصندوق داخل الصفحه */
+  margin: 0 auto;
+  /* كتابه النص في سطر واحد  */
+  width: max-content;
+  /* لون الصندوق من الداخل  */
+  background-color: rgb(255, 247, 0);
+  position: relative;
+  /* لون الخط */
+  color: black;
+  /* المسافه بين السطر والنص  */
+  /* line-height:0px    ; */
+  /* كيرف الصندوق */
+  border-radius: 100px;
+  /* طول الصندوق */
+  margin-top: 50px;
+}
+
+/*
+ <This Header Made By Mazen Mohamed> 
+ */
+:root {
+  --main-padding: 20px;
+  --main-color: goldenrod;
+  --color-fixed: #ffffff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::selection {
+  background-color: black;
+  color: var(--main-color);
+}
+
+.slide {
+  background-color: #000000;
+  color: #ffffff;
+  height: 7%;
+  padding: 0px 0;
+  font-weight: 400;
+  text-align: center;
+  border: 5px solid #000000;
+  border-radius: 5px;
+}
+
+.container {
+  height: fit-content;
+}
+
+.fixed {
+  background-color: #f6f6f6;
+  position: sticky;
+  top: 0;
+  resize: 0;
+  border: 1px solid #f6f6f6;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px 0px var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  z-index: 1;
+}
+
+.dropdown-content {
+  background-color: #f1f1f1f1;
+  display: none;
+  width: 120px;
+  position: absolute;
+}
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+  margin: 5px;
+}
+
+.dropdown span::after {
+  content: "";
+  border: 6px solid;
+  border-color: black transparent transparent transparent;
+  display: inline-flex;
+  margin-left: 3px;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.center {
+  width: 320px;
+  justify-content: space-around;
+  background: goldenrod;
+  border: 1px solid gold;
+  border-radius: 7px;
+  display: flex;
+  margin-right: 10%;
+}
+
+input.search-input {
+  height: 18px;
+  position: absolute;
+  top: 3px;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 6px;
+}
+.left {
+  display: flex;
+  width: 200px;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  height: 25px;
+}
+
+.fixed a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  height: 20px;
+  background-color: var(--main-color);
+  border: 1px solid darkgoldenrod;
+  margin-top: 2px;
+  border-radius: 6px;
+}
+
+.sign-in {
+  position: absolute;
+  left: 201px;
+}
+
+@media (max-width: 900px) {
+  .fixed {
+    height: 57px;
+    flex-wrap: wrap;
+  }
+  input.search-input {
+    width: 100px;
+  }
+  .left {
+    width: 130px;
+  }
+  .sign-in {
+    position: absolute;
+    left: 138px;
+  }
+  button {
+    position: absolute;
+    margin-left: 80%;
+  }
+  .cart {
+    position: absolute !important;
+    left: 174px !important;
+  }
+
+  .center {
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+  .sign-in {
+    max-width: 30%;
+  }
+  .why-read img {
+    display: none;
+  }
+  iframe {
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 31px;
+    width: fit-content;
+    width: 382px;
+    height: 150px;
+    margin: 10px;
+    margin-left: 50px;
+  }
+  .copy-write pre {
+    display: none;
+  }
+
+  .copy-write p {
+    width: 260px !important;
+    margin-left: 0px !important;
+  }
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.products-list {
+  background-color: white;
+  max-height: 300px;
+  height: fit-content;
+  border: 3px solid var(--main-color);
+  border-radius: 9px;
+  margin: 10px;
+  margin-top: 0px;
+  width: 201px;
+  margin-left: 0px;
+  box-shadow: 5px 5px 20px 0px var(--main-color);
+  display: none;
+  overflow: scroll;
+  z-index: 1;
+  position: absolute;
+}
+
+.products-list::-webkit-scrollbar {
+  display: none;
+}
+
+input.search-input:focus + .products-list {
+  content: "";
+  display: block;
+}
+.products-list:hover {
+  display: block;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.product img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.product h2 {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 125px;
+}
+.product h3 {
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+.cart {
+  position: absolute;
+  left: 239px;
+}
+
+/* This Footer Made By Mazen Mohamed */
+.footer {
+  background: -webkit-linear-gradient(
+    right,
+    #eee,
+    black,
+    var(--main-color)
+  ); /* For Safari */
+  background: -o-linear-gradient(
+    right,
+    #eee,
+    black,
+    var(--main-color)
+  ); /* For Opera */
+  background: -moz-linear-gradient(
+    right,
+    #eee,
+    black,
+    var(--main-color)
+  ); /* For Firefox */
+  background: linear-gradient(to right, #eee, black, var(--main-color));
+  height: 250px;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, auto);
+}
+
+.contact-us {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  /* margin-top: 7%; */
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-us span {
+  font-weight: bold;
+  color: var(--main-color);
+  display: block;
+}
+
+img.insta,
+img.facebook {
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+img.twtr {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.contact-us a {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-us a img:hover {
+  width: 35px;
+  height: 35px;
+  transition: 0.5s;
+}
+
+.about-us {
+  grid-column: 2 / 5;
+  display: flex;
+  align-items: center;
+  margin-left: -22px;
+  justify-content: space-between;
+  max-width: 800px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.about-us a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.hr1 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 6;
+  width: 100%;
+  height: 0px;
+}
+
+.hr2 {
+  grid-row: 4 / 4;
+  grid-column: 1 / 6;
+  width: 100%;
+  height: 0px;
+}
+
+.copy-write {
+  grid-row: 5 / 5;
+  text-align: center;
+  grid-column: 2 / 3;
+}
+
+.copy-write .pre2 {
+  grid-row: 2 / 3;
+  width: fit-content;
+  text-align: center;
+}
+
+.copy-write p {
+  margin-left: 241px;
+  width: 231px;
+}
+
+.footer a:hover {
+  color: red !important;
+  font-weight: bold;
+}
+
+/*This for my footer Mazen Mohamed*/
+:root {
+  --main-color: goldenrod;
+  --color-fixed: #ffffff;
+}
+.footer {
+  background: -webkit-linear-gradient(
+    right,
+    #eee,
+    black,
+    var(--main-color)
+  ); /* For Safari */
+  background: -o-linear-gradient(
+    right,
+    #eee,
+    black,
+    var(--main-color)
+  ); /* For Opera */
+  background: -moz-linear-gradient(
+    right,
+    #eee,
+    black,
+    var(--main-color)
+  ); /* For Firefox */
+  background: linear-gradient(to right, #eee, black, var(--main-color));
+  height: 250px;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, auto);
+}
+
+.contact-us {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  /* margin-top: 7%; */
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-us span {
+  font-weight: bold;
+  color: var(--main-color);
+  display: block;
+}
+
+img.insta,
+img.facebook {
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+img.twtr {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.contact-us a {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-us a img:hover {
+  width: 35px;
+  height: 35px;
+  transition: 0.5s;
+}
+
+.about-us {
+  grid-column: 2 / 5;
+  display: flex;
+  align-items: center;
+  margin-left: -22px;
+  justify-content: space-between;
+  max-width: 800px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.about-us a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.hr1 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 6;
+  width: 100%;
+  height: 0px;
+}
+
+.hr2 {
+  grid-row: 4 / 4;
+  grid-column: 1 / 6;
+  width: 100%;
+  height: 0px;
+}
+
+.copy-write {
+  grid-row: 5 / 5;
+  text-align: center;
+  grid-column: 2 / 3;
+}
+
+.copy-write .pre2 {
+  grid-row: 2 / 3;
+  width: fit-content;
+  text-align: center;
+}
+
+.copy-write p {
+  margin-left: 241px;
+  width: 231px;
+}
+
+.footer a:hover {
+  color: red !important;
+  font-weight: bold;
+}
